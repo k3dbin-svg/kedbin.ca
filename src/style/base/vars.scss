@@ -1,40 +1,55 @@
-// colors
-$page-background: #000000;
-$text-main: #00ff41;
-$text-secondary: #008f11;
-$text-body: #e0e0e0;  // White/light gray for body text
-$accent-color: #00ff41;
-$btn-background: #003b00;
-$btn-background-secondary: #001a00;
-$content-background: #0a0a0a;
-$highlight-color: #00ff41;
+// ============================================
+// binasoy.kim — Design Tokens
+// Technical studio / systems portfolio palette
+// ============================================
 
-// shadows
-$box-shadow: 0px 0px 75px 35px #00000042;
-$content-box-shadow-dark: 0px 0px 20px 13px #00ff4126;
-$content-box-shadow: 0px 0px 20px 13px #00ff4126;
-$text-shadow: 4px 4px 0px #00000040;
-$text-shadow-secondary: 0px 4px 10px #00ff41;
-$purple-glow: 0px 4px 4px #00ff41;
-$purple-glow2: 0px 0px 19px 3px rgb(0 255 65 / 70%);
+// Base
+$bg: #090B10;
+$surface: #11151C;
+$surface-raised: #171C24;
+$border: #232A35;
 
-//borders
-$border-radius: 0.7vw;
-$content-border-radius: 7vw;
+// Text
+$text-primary: #F3EFE7;
+$text-secondary: #A9B0B8;
+$text-muted: #6F7882;
 
-//backgrounds
+// Accent family
+$accent-emerald: #6FAE8D;
+$accent-amber: #C8A96B;
+$accent-slate: #7E97B8;
+
+// Legacy aliases for smooth migration
+$page-background: $bg;
+$text-main: $text-primary;
+$text-body: $text-secondary;
+$accent-color: $accent-emerald;
+$highlight-color: $accent-emerald;
+$content-background: $surface;
+
+// Shadows (subtle, moody)
+$box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+$content-box-shadow: 0 0 40px rgba(111, 174, 141, 0.06);
+$content-box-shadow-dark: 0 0 20px rgba(0, 0, 0, 0.35);
+$text-shadow: none;
+$text-shadow-secondary: 0 0 20px rgba(111, 174, 141, 0.25);
+$purple-glow: 0 0 12px rgba(111, 174, 141, 0.35);
+$purple-glow2: 0 0 24px rgba(111, 174, 141, 0.5);
+
+// Border radius
+$border-radius: 8px;
+$content-border-radius: 16px;
+
+// Background image (portrait)
 $content-background-image: url("/src/assets/images/profile_v4.webp");
 
-// fonts
-@font-face {
-    font-family: 'Alata';
-    font-style: normal;
-    font-weight: 400;
-    src: url("/src/assets/fonts/Alata-Regular.ttf");
-}
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-$font-family: 'Courier New', monospace;
-$font-family-secondary: 'Courier New', monospace;
+$font-heading: 'Playfair Display', Georgia, serif;
+$font-body: 'Inter', system-ui, sans-serif;
+$font-mono: 'JetBrains Mono', 'Courier New', monospace;
 
-// transitions
-$transition: all 0.3s ease-in-out;
+// Transitions
+$transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
